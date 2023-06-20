@@ -18,10 +18,6 @@ nav{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.logo img{
-    width: 100px;
-}
-
 .navbar{
     height: 100%;
     width: 1250px;
@@ -30,6 +26,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+}
+
+.logo img{
+    width: 100px;
 }
 
 .navbar .nav-links{
@@ -46,11 +46,12 @@ nav{
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 0 14px;
+    padding: 0 20px;
 }
 
 .navbar .nav-links .links li a{
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    font-size: 16px;
     font-weight: 600;
     height: 100%;
     color: #fff;
@@ -83,7 +84,7 @@ nav{
 }
 
 .navbar .nav-links .links .sub-menu{
-    width: 143.5px;
+    width: 151px;
     position: absolute;
     top:70px;
     left: 0;
@@ -95,7 +96,7 @@ nav{
 }
 
 .navbar .nav-links .links .sub-menu li{
-    padding: 0 22px;
+    padding: 0 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -107,4 +108,154 @@ nav{
 
 .navbar .nav-links .links li:hover .services-sub-menu{
     display: block;
+}
+
+.navbar .bx-menu,
+.nav-links .sidebar-logo .side-logo,
+.nav-links .sidebar-logo .bx-x{
+        display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1023px){
+
+    .navbar{
+        max-width: 100%;
+        padding: 0 25px 0 40px;
+    }
+
+    .logo img{
+        width: 90px;
+    }
+
+    .navbar .nav-links .links li{
+        padding: 0 15px;
+    }
+
+    .navbar .nav-links .links li a{
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:800px){
+
+    /* .logo{
+        position: relative;
+        right: 50%;
+        
+    }
+
+    .logo img{
+        width: 90px;
+    } */
+
+    .navbar .nav-links{
+        display: block;
+        position: fixed;
+        background: #404040;
+        padding: 20px;
+        top: 0;
+        left: -100%;
+        max-width: 270px;
+        width: 100%;
+        line-height: 40px;
+        transition: all 0.5s ease;
+        z-index: 100;
+    }
+
+    .navbar .nav-links .sidebar-logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .bx-menu,
+    .nav-links .sidebar-logo .side-logo,
+    .nav-links .sidebar-logo .bx-x{
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .navbar .bx-menu,
+    .nav-links .sidebar-logo .side-logo,
+    .nav-links .sidebar-logo .bx-x{
+        display: block;
+    }
+
+    .navbar .nav-links .links{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .navbar .nav-links .links li{
+        display: block;
+    }
+
+    .navbar .nav-links .links .sub-menu{
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    .navbar .nav-links .links .sub-menu li{
+        border-bottom: none;
+    }
+
+    .navbar .nav-links .links li:hover .services-sub-menu{
+        display: none;
+    }
+
+    .navbar .nav-links .links li .arrow{
+        line-height: 40px;
+    }
+
+    .navbar .nav-links .links li:hover .services-arrow{
+        transform: rotate(0deg);
+        color: #000;
+    }
+
+    .navbar .nav-links.show1 .links .sub-menu.services-sub-menu{
+        display: block;
+    }
+
+    .navbar .nav-links.show1 .links li .services-arrow{
+        transform: rotate(180deg);
+        color: #000;
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 370px){
+
+        .navbar .nav-links{
+            max-width: 100%;
+        }
+
+    }
+
 }
