@@ -250,7 +250,7 @@ nav{
 
 
 
-    @media (max-width: 420px){
+    @media (min-width: 300px){
 
         .navbar .nav-links{
             max-width: 100%;
