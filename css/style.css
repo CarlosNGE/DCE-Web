@@ -292,7 +292,7 @@ header{
 
 
 
-    @media (max-width: 483px){
+    @media (max-width: 600px){
 
         .navbar .nav-links{
             max-width: 100%;
