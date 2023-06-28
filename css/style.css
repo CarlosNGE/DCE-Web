@@ -308,6 +308,20 @@ header{
     @media (max-width: 521px){
 
         .navbar .nav-links{
+            display: block;
+            position: fixed;
+            background: #404040;
+            padding: 20px;
+            top: 0;
+            right: -525px;
+            max-width: 270px;
+            width: 100%;
+            line-height: 50px;
+            transition: all 0.5s ease;
+            z-index: 100;
+        }
+
+        .navbar .nav-links{
             max-width: 100%;
         }
 
