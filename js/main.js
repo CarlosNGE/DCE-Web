@@ -8,11 +8,11 @@ function init() {
     let navLinks = document.querySelector(".nav-links");
 
     menuOpenBtn.addEventListener("click", ()=>{
-        navLinks.style.left="0";
+        navLinks.style.right="0";
     });
 
     closeOpenBtn.addEventListener("click", ()=>{
-        navLinks.style.left="-100%";
+        navLinks.style.right="-100%";
     });
 
 

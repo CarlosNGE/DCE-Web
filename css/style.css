@@ -23,7 +23,7 @@ header{
 
 .navbar{
     height: 100%;
-    width: 1250px;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -73,7 +73,6 @@ header{
 
 .navbar .nav-links .links li:hover{
     background: #F3D237;
-    color: #000;
 }
 
 .navbar .nav-links .links li a:hover{
@@ -174,6 +173,10 @@ header{
         font-size: 15px;
     }
 
+    .navbar .nav-links .links .sub-menu{
+        width: 136px;
+    }
+
     .title{
         background-color: #F3D237;
         background-image: url(../images/expoxyheader_large.jpg);
@@ -213,12 +216,16 @@ header{
         background: #404040;
         padding: 20px;
         top: 0;
-        left: -100%;
+        right: 100%;
         max-width: 270px;
         width: 100%;
-        line-height: 40px;
+        line-height: 50px;
         transition: all 0.5s ease;
         z-index: 100;
+    }
+
+    .links li{
+        padding-left: 30px;
     }
 
     .navbar .nav-links .sidebar-logo{
@@ -233,6 +240,12 @@ header{
         color: #fff;
         font-size: 25px;
         font-weight: 600;
+    }
+
+    .bx-menu{
+        border: solid 2px white;
+        position: absolute;
+        right: 30px;
     }
 
     .navbar .bx-menu,
