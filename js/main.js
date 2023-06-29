@@ -19,8 +19,13 @@ function init() {
     // sidebar sub menu open close
 
     let servicesArrow = document.querySelector(".services-arrow");
+    let servicesMenu = document.querySelector(".sub");
 
     servicesArrow.addEventListener("click", ()=>{
+        navLinks.classList.toggle("show1");
+    });
+
+    servicesMenu.addEventListener("click", ()=>{
         navLinks.classList.toggle("show1");
     });
 

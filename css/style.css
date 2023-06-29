@@ -128,8 +128,9 @@ header{
 /* main body/title */
 
 .title{
+    width: 100%;
     background-color: #F3D237;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -140,7 +141,7 @@ header{
 .title h1{
     width: 700px;
     color: #fff;
-    font-size: clamp(10px, 2.5vw + 1rem, 40px);
+    font-size: clamp(10px, 2vw + 1rem, 40px);
 }
 
 .title p{
@@ -164,9 +165,17 @@ header{
     height: 53px;
     font-size: 16px;
     font-weight: 600;
+    letter-spacing: 0.5px;
     border-radius: 5px;
     border: none;
-    background: linear-gradient(rgba(211, 169, 60, 1), rgba(251, 237, 120, 1), rgba(235, 180, 35, 1));
+    background: linear-gradient(rgba(243, 210, 55, 1),rgba(211, 169, 60, 1));
+    color: #000;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2 ease;
+}
+
+.title button:active{
+    transform: scale(0.96);
 }
 
 
@@ -209,8 +218,8 @@ header{
     }
 
     .title{
-        height: 550px;
-        padding: 110px 100px;
+        height: 500px;
+        padding: 90px 100px;
         background-position: center;
     }
 
@@ -272,23 +281,39 @@ header{
     }
 
     .navbar .nav-links .sidebar-logo{
+        margin-top: 0;
+        /* border: #fff 2px solid; */
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .navbar .bx-menu,
+    .navbar,
     .nav-links .sidebar-logo .side-logo,
-    .nav-links .sidebar-logo .bx-x{
+    .nav-links .sidebar-logo{
         color: #fff;
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: 600;
+        /* padding: 0 10px 0 10px ; */
+    }
+
+    .side-logo, .bx-x{
+        /* border: #fff 2px solid; */
+        padding-right: 8px;
+        padding-left: 13px;
+    }
+
+    .bx-x{
+        color: #fff;
+        font-size: 35px;
         font-weight: 600;
     }
 
     .bx-menu{
-        border: solid 2px white;
+        /* border: solid 2px white; */
         position: absolute;
         right: 30px;
+        font-size: 30px;
     }
 
     .navbar .bx-menu,
@@ -347,12 +372,12 @@ header{
     } */
 
     .title h1{
-        width: 100%;
+        width: 650px;
         padding-right: 100px;
     }
 
     .title p{
-        width: 100%;
+        width: 600px;
         padding-right: 100px;
     }
 
@@ -379,26 +404,32 @@ header{
         }
 
         .title{
-            height: 550px;
-            padding: 110px 0 0 100px;
+            height: 500px;
+            padding: 85px 60px 0px 60px;
         }
 
         .title h1{
+            text-align: center;
             width: 100%;
-            /* padding-right: 100px; */
+            padding-right: 0;
         }
     
         .title p{
+            text-align: center;
             width: 100%;
-            /* padding-right: 100px; */
+            padding-right: 0;
         }
 
         .t-btn{
             width: 100%;
             display: flex;
-            gap: 40px;
-            justify-content:baseline;
-            margin-right: 100px;
+            flex-direction: row;
+            /* gap: 40px; */
+            justify-content: center;
+            align-items: center;
+            /* padding-left: 0; */
+            padding: 0;
+            
         }
 
         .title button{
@@ -407,6 +438,52 @@ header{
             height: 50px;
             font-size: 14px;
             font-weight: 600;
+        }
+
+    }
+
+    @media (max-width: 500px){
+
+        .title{
+            width: 100%;
+            height: 625px;
+            padding: 85px 60px 0px 60px;
+            
+        }
+
+        .title h1{
+            text-align: center;
+            width: 100%;
+            padding-right: 0;
+        }
+    
+        .title p{
+            text-align: center;
+            width: 100%;
+            padding-right: 0;
+        }
+
+        .t-btn{
+            flex-direction: column;
+            gap: 0;
+            padding: 30px;
+        }
+
+        .title button{
+            margin: 20px;
+            width: 165px;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+    }
+
+    @media (max-width: 320px){
+
+        .title{
+            height: 700px;
+            padding: 85px 40px 0px 40px;
         }
 
     }
