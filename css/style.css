@@ -1,11 +1,11 @@
 /* Google fonts CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-:root{
+/* :root{
     --fs-xl: 2.5rem;
     --fs-600: 1.25rem;
 
-}
+} */
 
 *{
     margin: 0;
@@ -129,26 +129,44 @@ header{
 
 .title{
     background-color: #F3D237;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 636px;
-    padding: 200px 0 200px 100px;
+    height: 550px;
+    padding: 110px 100px;
 }
 
 .title h1{
-    width: 600px;
+    width: 700px;
     color: #fff;
-    font-size: var(--fs-xl);
+    font-size: clamp(10px, 2.5vw + 1rem, 40px);
 }
 
 .title p{
     margin: 35px 0 0 0;
     width: 600px;
     color: #fff;
-    font-size: var(--fs-600);
+    font-size: clamp(10px, 1vw + 1rem, 20px);
     font-weight: 500;
+}
+
+.t-btn{
+    width: 400px;
+    display: flex;
+    gap: 50px;
+    justify-content:baseline;
+}
+
+.title button{
+    margin: 40px 0;
+    width: 165px;
+    height: 53px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(rgba(211, 169, 60, 1), rgba(251, 237, 120, 1), rgba(235, 180, 35, 1));
 }
 
 
@@ -163,11 +181,11 @@ header{
 
 @media (max-width:1023px){
 
-    :root{
+    /* :root{
         --fs-xl: 2.2rem;
         --fs-600: 1.18rem;
     
-    }
+    } */
 
     .navbar{
         max-width: 100%;
@@ -191,22 +209,26 @@ header{
     }
 
     .title{
-        height: 600px;
-        padding: 170px 0 170px 100px;
+        height: 550px;
+        padding: 110px 100px;
+        background-position: center;
     }
 
     .title h1{
-        width: 500px;
-        color: #fff;
-        font-size: 2.2rem;
+        width: 550px;
     }
     
     .title p{
-        margin: 35px 0 0 0;
-        width: 450px;
-        color: #fff;
-        font-size: 1.18rem;
-        font-weight: 500;
+        width: 550px;
+    }
+
+    
+    .title button{
+        margin: 40px 0;
+        width: 160px;
+        height: 51px;
+        font-size: 15px;
+        font-weight: 600;
     }
 
 }
@@ -318,7 +340,29 @@ header{
         color: #000;
     }
 
-    
+    /* .title{
+        height: 500px;
+        padding: 125px 100px;
+        background-position: center;
+    } */
+
+    .title h1{
+        width: 100%;
+        padding-right: 100px;
+    }
+
+    .title p{
+        width: 100%;
+        padding-right: 100px;
+    }
+
+    .title button{
+        margin: 40px 0;
+        width: 155px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+    }
 
 }
 
@@ -328,21 +372,42 @@ header{
 
 
 
-    @media (max-width: 521px){
+    @media (max-width: 653px){
 
         .navbar .nav-links{
             max-width: 100%;
         }
 
-        /* .title{
-            background-color: #F3D237;
-            background-image: url(../images/epoxyheader_small.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 636px;
-            padding: 200px 0 200px 100px;
-        } */
+        .title{
+            height: 550px;
+            padding: 110px 0 0 100px;
+        }
+
+        .title h1{
+            width: 100%;
+            /* padding-right: 100px; */
+        }
+    
+        .title p{
+            width: 100%;
+            /* padding-right: 100px; */
+        }
+
+        .t-btn{
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            justify-content:baseline;
+            margin-right: 100px;
+        }
+
+        .title button{
+            margin: 40px 0;
+            width: 130px;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+        }
 
     }
 
