@@ -265,7 +265,6 @@ header{
     grid-template-rows: 90%;
     grid-template-areas:
     "e f"
-    "e g"
     "e g";
 
 }
@@ -284,7 +283,7 @@ header{
 
 .why img{
     border: solid 1px #000;
-    margin: auto;
+    /* margin: auto; */
     width: clamp(18.75rem, 14.85666rem + 16.393vw, 31.25rem);
 }
 
