@@ -262,7 +262,7 @@ header{
     column-gap: 50px;
     row-gap: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90%;
+    grid-template-rows: 1fr;
     grid-template-areas:
     "e f"
     "e g";
