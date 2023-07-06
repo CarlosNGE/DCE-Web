@@ -256,8 +256,8 @@ header{
 
 .why{
     border: solid 1px #000;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem);
     display: grid;
     column-gap: 50px;
