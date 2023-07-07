@@ -243,9 +243,11 @@ header{
 
 .s-info p{
     /* border: solid 1px #000; */
-    text-align:left;
+    text-align: left;
     letter-spacing: 1px;
-    font-size: clamp(0.8125rem, 0.6567rem + 0.656vw, 1.3125rem);
+    /* font-size: clamp(0.8125rem, 0.6567rem + 0.656vw, 1.3125rem); */
+    font-size: clamp(1rem, 0.82473rem + 0.738vw, 1.5625rem);
+    /* margin: clamp(0.0625rem, -0.83525rem + 3.78vw, 2rem); */
     /* font-size: 25px; */
 }
 
