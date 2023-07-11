@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
 
+    
+
     // sidebar open close
     let menuOpenBtn = document.querySelector(".navbar .bx-menu");
     let closeOpenBtn = document.querySelector(".nav-links .bx-x");
@@ -29,4 +31,21 @@ function init() {
         navLinks.classList.toggle("show1");
     });
 
+// scroll timeline 
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) =>{
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden, .hiddenr');
+    hiddenElements.forEach((el) => observer.observe(el));
+
 }
+
