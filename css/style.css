@@ -234,8 +234,8 @@ header{
 
 .services img{
     margin-top: 0;
-    /* margin: auto; */
-    padding: 25px;
+    margin: auto;
+    padding: 25px 25px 25px 25px;
     border-radius: 10px;
     /* border: solid 1px #000; */
     /* padding: clamp(0.625rem, -0.73778rem + 5.738vw, 5rem); */
@@ -370,6 +370,7 @@ header{
     position: fixed;
     top: 50%;
     bottom: 50%;
+
 }
 
 .smedia a{
@@ -492,7 +493,7 @@ footer li{
 @media (max-width:2418px){
 
     .s-info p{
-        padding: 0 65px 0 65px;
+        padding: 0 10px 0 65px;
     }
 
 }
@@ -515,11 +516,11 @@ footer li{
     }
 
     .services img{
-        padding: 75px;
+        padding: 50px 50px 50px 100px;
     }
 
     .s-info p{
-        padding: 0 0 0 0;
+        padding: 0 15px 0 15px;
     }
 
     /* social media */
@@ -563,8 +564,13 @@ footer li{
 
     /* main body/services */
 
+    .services img{
+        padding: 75px 95px 75px 80px;
+    }
+
+
     .s-info p{
-        padding: 0 40px 0 40px;;
+        padding: 0 0px 0 40px;;
     }
 
     /* social media */
@@ -577,6 +583,8 @@ footer li{
         width: 57px;
         height: 57px;
     }
+
+    
     
 
 }
@@ -610,12 +618,14 @@ footer li{
 
     .services img{
         height: 600px;
+        padding: 75px 85px 75px 80px;
         object-fit:cover;
         object-position: left;
     }
 
+
     .s-info p{
-        padding: 0 25px 0 25px;;
+        padding: 0 15px 0 50px;
     }
 
     /* social media */
@@ -696,9 +706,12 @@ footer li{
 
     .services img{
         height: 450px;
+        padding: 30px 75px 30px 75px;
         object-fit:cover;
         object-position: left;
     }
+
+    
 
 
     /* main body/why us */
