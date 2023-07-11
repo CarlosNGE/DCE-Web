@@ -314,7 +314,7 @@ header{
 
 .hiddenr{
     opacity: 0;
-    transform: translateX(-10%);
+    transform: translateX(-15%);
     transition: all 1s;
 }
 
