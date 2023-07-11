@@ -155,7 +155,7 @@ header{
     margin: 50px 0 0 0;
     width: 600px;
     color: #fff;
-    font-size: clamp(10px, 0.5vw + 1rem, 25px);
+    font-size: clamp(1.25rem, 1.15263rem + 0.41vw, 1.5625rem);
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -544,12 +544,12 @@ footer li{
 
     .title{
         height: 500px;
-        padding: 90px 100px;
+        padding: 80px 100px;
         background-position: center;
     }
 
     .title h1{
-        width: 550px;
+        width: 600px;
     }
     
     .title p{
