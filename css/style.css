@@ -131,6 +131,7 @@ header{
 
 .title{
     width: 100%;
+    /* margin-top: 70px; */
     background-color: #F3D237;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
     background-size: cover;
@@ -487,7 +488,7 @@ footer li{
     /* main body/title */
     
     .title{
-        padding-left: 125px;
+        padding-left: 115px;
     }
 
 }
