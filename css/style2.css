@@ -222,26 +222,40 @@ header{
     /* margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem); */
     /* margin-top: clamp(1rem, -0.63519rem + 6.885vw, 6.25rem); */
     margin: clamp(0.9375rem, -3.6966rem + 19.512vw, 10.9375rem);
-    /* border: solid 1px #000; */
+    border: solid 1px #000;
     display: grid;
     justify-content: center;
     align-items: center;
-    row-gap: 150px;
+    row-gap: 0;
+    column-gap: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .a{
-    /* border: solid 1px #000; */
+    border: solid 1px #000;
     
 }
+
+.b{
+    border: solid 1px #000;
+}
+
+.c{
+    border: solid 1px #000;
+}
+
+.d{
+    border: solid 1px #000;
+}
+
 
 .services img{
     margin-top: 0;
     margin: auto;
     padding: 25px 25px 25px 25px;
     border-radius: 10px;
-    /* border: solid 1px #000; */
+    border: solid 1px #000;
     /* padding: clamp(0.625rem, -0.73778rem + 5.738vw, 5rem); */
     /* width: clamp(12.5rem, 2.7663rem + 40.984vw, 43.75rem); */
     width: clamp(12.5rem, 1.79303rem + 45.082vw, 46.875rem);
@@ -267,7 +281,7 @@ header{
 .s-info button{
     /* border: solid 1px #000; */
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     width: 185px;
     height: 50px;
     font-size: 16px;
@@ -290,8 +304,8 @@ header{
 }
 
 .s-info h2{
-    /* border: solid 1px #000; */
-    padding: 0 0 40px 0;
+    border: solid 1px #000;
+    padding: 0 0 0 0;
     text-align: center;
     letter-spacing: 0.5px;
     font-size: clamp(1.375rem, 1.27763rem + 0.41vw, 1.6875rem);
@@ -302,12 +316,18 @@ header{
 }
 
 .s-info p{
-    /* border: solid 1px #000; */
+    border: solid 1px #000;
     padding: 0 125px 0 125px;
     text-align: left;
     letter-spacing: 1px;
     font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem);
     /* font-size: 25px; */
+}
+
+.area2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f5f5f5;
 }
 
 .hidden{
