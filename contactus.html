@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style5.css">
     <!-- Box Icons Font CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>DCE - Concrete Flooring</title>
@@ -49,58 +49,65 @@
 
         <article class="containerheader">
             <section class="title">
-                <h1 class="hidden">Concrete Polishing</h1>
-                <p class="hidden">From Luxurious solid color epoxy to highly decorative and costume-made epoxy floors for commercial and residential.</p>
-                <div class="t-btn hidden">
-                    <a href="contactus.html"><button class="btn">CONTACT</button></a>
-                    <a href=""><button class="btn">(925) 565 3048</button></a>
-                </div> 
+                <h1 class="hidden">Every Long-Lasting Flooring Starts With a FREE Estimate</h1>
+                <p class="hidden">If you would like to learn more about our services, have any question about a specific floor or you would like to inquire about a large flooring project.</p>
             </section>
         </article>
 
         <article>
             <section class="contact">
-                <!-- <form action=""> -->
-
-                    <h3>GET IN TOUCH</h3>
-
+                    
                     <div class="container">
-                        <h1>FormSubmit Demo</h1>
                         <form target="_blank" action="https://formsubmit.co/rprieto@deconcretepoxy.com" method="POST">
-                          <div class="form-group">
-                            <div class="form-row">
-                              <div class="col">
-                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                              </div>
-                              <div class="col">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                            <h3>Get in Touch!</h3>
+                            <div class="form-row form-error" style="display:none;"></div>
+                                <div class="form-row">
+                                    <input id="contact-form-name" placeholder="Your Name" class="form-input" type="text" name="name" required>
+                                </div>
+                                <div class="form-row">
+                                    <input id="contact-form-email" placeholder="Email" class="form-input" type="email" name="email" required>
+                                </div>
+                                <div class="form-row">
+                                    <input id="contact-form-phone" placeholder="Phone" class="form-input" type="tel" name="phone">
+                                </div>
+                                <div class="form-row">
+                                    <input id="contact-form-address" placeholder="Address (Street, Suburb, City)" class="form-input" type="tel" name="location">
+                                </div>
+                                <div class="form-row">
+                                    <select id="Services" name="Service-Required" data-name="Service Required" required="" class="select-field">
+                                        <option value="">Service Required</option>
+                                        <option value="Solid Color Epoxy Flooring System">Solid Color Epoxy Flooring System</option>
+                                        <option value="Epoxy Flake Flooring system">Epoxy Flake Flooring system</option>
+                                        <option value="Metallic Epoxy Flooring system">Metallic Epoxy Flooring system</option>
+                                        <option value="Quartz Flooring System">Quartz Flooring System</option>
+                                        <option value=""></option>
+                                        <option value="Concrete Diamond Polishing">Concrete Diamond Polishing</option>
+                                        <option value="Polishable Overlays">Polishable Overlays</option>
+                                        <option value="Concrete Sealing and Densification">Concrete Sealing and Densification</option>
+                                        <option value="Restoration and Polishable Self-Leveling Overlays">Restoration and Polishable Self-Leveling Overlays</option>
+                                        <option value="Epoxy Terrazzo">Epoxy Terrazzo</option>
+                                        <option value="Floor Preparation">Floor Preparation</option>
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <textarea id="contact-form-message" placeholder="How can we help you" class="form-input" name="message" required></textarea>
+                                </div>
+                        <button type="submit">Submit</button>
                         </form>
-                      </div>
+                    </div>
+                    <section class="contact-info"> 
+                        <div class="contact-f">
+                            <p><i class='bx bxs-envelope cont-s'></i></p>
+                            <p><a href="#">rigosccs@gmail.com</a></p>
+                            <p><i class='bx bxs-phone cont-s'></i></p>
+                            <p><a href="#">(925) 565 3048</a></p>
+                        </div>
+                        <div>
+                            <img src="images/contactus.svg" alt="">
+                        </div>
+                    </section> 
 
-                   <!-- <div class="form-row form-error" style="display:none;"></div>
-                        <div class="form-row">
-                          <input id="contact-form-name" placeholder="Your Name" class="form-input" type="text" name="name" required>
-                        </div>
-                        <div class="form-row">
-                          <input id="contact-form-email" placeholder="Email" class="form-input" type="email" name="email" required>
-                        </div>
-                        <div class="form-row">
-                          <input id="contact-form-phone" placeholder="Phone" class="form-input" type="tel" name="phone">
-                        </div>
-                        <div class="form-row">
-                            <input id="contact-form-address" placeholder="Address (Street, Suburb, City)" class="form-input" type="tel" name="phone">
-                          </div>
-                        <div class="form-row">
-                          <textarea id="contact-form-message" placeholder="How can we help you" class="form-input" name="message" required></textarea>
-                        </div>
-                        <button type="submit">Submit</button> -->
+                   
 
                     
 
@@ -116,7 +123,7 @@
                         <option value="Other">Other</option></select>
                     <textarea  id="message"  rows="4" placeholder="How can we help you"></textarea>
                     <button type="submit">Send</button> -->
-                </form>
+            
             </section>
         </article>
         
