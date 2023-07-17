@@ -39,8 +39,10 @@ header{
     padding: 0 100px 0 75px;
 }
 
+
 .logo img{
     width: 100px;
+    
 }
 
 .smedia-mobile{
@@ -162,7 +164,8 @@ header{
     background-position: center;
     height: 550px;
     /* padding: clamp(0.9375rem, -2.66395rem + 15.164vw, 12.5rem); */
-    padding-left: 225px;
+    /* padding-left: 260px; */
+    padding-left: clamp(1rem, -0.58985rem + 10.599vw, 16.25rem);
     padding-top: 75px;
 }
 
@@ -219,14 +222,14 @@ header{
 
 
 .services{
-    /* margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem); */
-    /* margin-top: clamp(1rem, -0.63519rem + 6.885vw, 6.25rem); */
-    margin: clamp(0.9375rem, -3.6966rem + 19.512vw, 10.9375rem);
-    /* border: solid 1px #000; */
+    /* margin: clamp(0.9375rem, -3.6966rem + 19.512vw, 10.9375rem); */
+    margin: clamp(1rem, -0.47203rem + 6.198vw, 9.375rem);
+    border: solid 1px #000;
     display: grid;
     justify-content: center;
     align-items: center;
     row-gap: 150px;
+    column-gap: 200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -239,12 +242,11 @@ header{
 .services img{
     margin-top: 0;
     margin: auto;
-    padding: 25px 25px 25px 25px;
+    /* padding: 25px 25px 25px 25px; */
     border-radius: 10px;
-    /* border: solid 1px #000; */
-    /* padding: clamp(0.625rem, -0.73778rem + 5.738vw, 5rem); */
-    /* width: clamp(12.5rem, 2.7663rem + 40.984vw, 43.75rem); */
-    width: clamp(12.5rem, 1.79303rem + 45.082vw, 46.875rem);
+    border: solid 1px #000;
+    /* width: clamp(12.5rem, 1.79303rem + 45.082vw, 46.875rem); */
+    width: clamp(9.375rem, 5.1396rem + 28.236vw, 50rem);
     /* transition: .1s ease; */
 }
 
@@ -257,7 +259,7 @@ header{
     margin: clamp(1rem, 0.14334rem + 3.607vw, 3.75rem);
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 50px;
 }
 
 .s-info a{
@@ -267,7 +269,7 @@ header{
 .s-info button{
     /* border: solid 1px #000; */
     margin: auto;
-    margin-top: 50px;
+    /* margin-top: 40px; */
     width: 185px;
     height: 50px;
     font-size: 16px;
@@ -291,7 +293,7 @@ header{
 
 .s-info h2{
     /* border: solid 1px #000; */
-    padding: 0 0 40px 0;
+    padding: 0 0 0 0;
     text-align: center;
     letter-spacing: 0.5px;
     font-size: clamp(1.375rem, 1.27763rem + 0.41vw, 1.6875rem);
@@ -302,11 +304,13 @@ header{
 }
 
 .s-info p{
-    /* border: solid 1px #000; */
+    border: solid 1px #000;
     padding: 0 125px 0 125px;
     text-align: left;
     letter-spacing: 1px;
-    font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem);
+    /* font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem); */
+    font-size: clamp(1rem, 0.9739rem + 0.174vw, 1.25rem);
+    
     /* font-size: 25px; */
 }
 
@@ -525,8 +529,10 @@ footer li{
 
 @media (max-width:2418px){
 
-    .s-info p{
-        padding: 0 10px 0 65px;
+     /* main body/title */
+
+    .services{
+        column-gap: 100px;
     }
 
 }
@@ -539,21 +545,24 @@ footer li{
     /* main body/title */
     
     .title{
-        padding-left: 175px;
+        /* padding-left: 175px; */
     }
 
     /* main body/services */
 
     .services{
-        row-gap: 50px;
+        row-gap: 125px;
+        column-gap: 75px;
     }
 
+
     .services img{
-        padding: 50px 50px 50px 100px;
+        /* padding: 50px 50px 50px 100px; */
+        /* padding: 25px 25px 25px 25px; */
     }
 
     .s-info p{
-        padding: 0 15px 0 15px;
+        padding: 0 50px 0 50px;
     }
 
     /* social media */
@@ -592,18 +601,27 @@ footer li{
     /* main body/title */
     
     .title{
-        padding-left: 115px;
+        /* padding-left: 115px; */
     }
 
     /* main body/services */
 
+    .services{
+        column-gap: 50px;
+    }
+
+
     .services img{
-        padding: 75px 95px 75px 80px;
+        /* padding: 75px 95px 75px 80px; */
+    }
+
+    .s-info{
+        row-gap: 35px;
     }
 
 
     .s-info p{
-        padding: 0 0px 0 40px;;
+        padding: 0 25px 0 25px;
     }
 
     /* social media */
@@ -642,23 +660,32 @@ footer li{
 
     /* main body/services */
 
+    .services{
+        column-gap: 25px;
+    }
+
+
+    .services img{
+        /* height: 600px; */
+        /* padding: 75px 85px 75px 80px; */
+        object-fit:cover;
+        object-position: left;
+        height: 325px;
+    }
+
+    .s-info{
+        row-gap: 30px;
+    }
+
+    .s-info p{
+        /* padding: 0 15px 0 50px; */
+    }
+
     .s-info button{
         width: 175px;
         height: 45px;
         font-size: 14px;
         font-weight: 600;
-    }
-
-    .services img{
-        height: 600px;
-        padding: 75px 85px 75px 80px;
-        object-fit:cover;
-        object-position: left;
-    }
-
-
-    .s-info p{
-        padding: 0 15px 0 50px;
     }
 
     /* social media */
@@ -678,6 +705,8 @@ footer li{
 
 
 @media (max-width:1023px){
+
+    /* header/navegation section */
 
     .navbar{
         max-width: 100%;
@@ -699,6 +728,8 @@ footer li{
     .navbar .nav-links .links .sub-menu{
         width: 136px;
     }
+
+     /* main body/title */
 
     .title{
         height: 500px;
@@ -727,7 +758,8 @@ footer li{
     /* main body/services */
 
     .services{
-        row-gap: 0px;
+        padding-top: 50px;
+        row-gap: 75px;
     }
 
     .s-info button{
@@ -737,11 +769,15 @@ footer li{
         font-weight: 600;
     }
 
+    .s-info p{
+        padding: 0 10px 0 10px;
+    }
+
     .services img{
-        height: 450px;
-        padding: 30px 75px 30px 75px;
-        object-fit:cover;
-        object-position: left;
+        /* height: 450px; */
+        /* padding: 30px 75px 30px 75px; */
+        /* object-fit:cover;
+        object-position: left; */
     }
 
     
@@ -1012,7 +1048,7 @@ footer li{
 
     .services{
         margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem);
-        margin-top: 125px;
+        /* margin-top: 125px; */
         /* border: solid 1px #000; */
         display: grid;
         justify-content: center;
@@ -1157,9 +1193,9 @@ footer li{
             /* border: #000 1px solid; */
             margin-top: 0;
             padding: 0;
-            width: 100%;
+            /* width: 100%;
             object-fit:contain;
-            object-position: none;
+            object-position: none; */
             
         }
 
@@ -1268,6 +1304,7 @@ footer li{
         }
 
         .services{
+            padding-top: 0;
             margin-top: 25px;
             margin-bottom: 100px;
             row-gap: 100px;
@@ -1275,8 +1312,8 @@ footer li{
 
         .services img{
             /* border: #000 1px solid; */
-            object-fit: contain;
-            object-position: none;
+            /* object-fit: contain;
+            object-position: none; */
             margin-top: 50px;
 
             
