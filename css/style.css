@@ -166,15 +166,16 @@ header{
     /* padding: clamp(0.9375rem, -2.66395rem + 15.164vw, 12.5rem); */
     /* padding-left: 260px; */
     padding-left: clamp(1rem, -0.58985rem + 10.599vw, 16.25rem);
-    padding-top: 75px;
+    padding-top: 78px;
 }
 
 .title h1{
     /* border: 1px solid black; */
     width: 700px;
     color: #fff;
-    font-size: clamp(10px, 2vw + 1rem, 37px);
-    letter-spacing: 1.5px;
+    /* font-size: clamp(10px, 2vw + 1rem, 37px); */
+    font-size: clamp(1.5625rem, 1.43215rem + 0.869vw, 2.8125rem);
+    letter-spacing: 1px;
 }
 
 .title p{
@@ -182,7 +183,8 @@ header{
     margin: 50px 0 0 0;
     width: 600px;
     color: #fff;
-    font-size: clamp(1.25rem, 1.15263rem + 0.41vw, 1.5625rem);
+    /* font-size: clamp(1.25rem, 1.15263rem + 0.41vw, 1.5625rem); */
+    font-size: clamp(1.25rem, 1.21745rem + 0.217vw, 1.5625rem);
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -546,6 +548,7 @@ footer li{
     
     .title{
         /* padding-left: 175px; */
+        padding-top: 87px;
     }
 
     /* main body/services */
@@ -602,11 +605,13 @@ footer li{
     
     .title{
         /* padding-left: 115px; */
+        padding-top: 95px;
     }
 
     /* main body/services */
 
     .services{
+        padding-top: 50px;
         column-gap: 50px;
     }
 
@@ -656,6 +661,12 @@ footer li{
 
     .navbar .nav-links .links .sub-menu{
         width: 157px;
+    }
+
+    /* main body/title */
+
+    .title{
+        padding-top: 105px;
     }
 
     /* main body/services */
@@ -733,8 +744,10 @@ footer li{
 
     .title{
         height: 500px;
-        padding: 80px 100px;
+        padding-top: 90px;
+        padding-left: 83px;
         background-position: center;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
     }
 
     .title h1{
@@ -899,6 +912,8 @@ footer li{
         width: 90px;
     } */
 
+    /* header/navegation section */
+
     .navbar .nav-links{
         display: block;
         position: fixed;
@@ -906,7 +921,7 @@ footer li{
         padding: 20px;
         top: 0;
         right: -100%;
-        max-width: 270px;
+        max-width: 300px;
         width: 100%;
         line-height: 50px;
         transition: all 0.5s ease;
@@ -1024,16 +1039,30 @@ footer li{
 
     .title{
         height: 550px;
+        padding: 115px 100px 0px 100px;
+        background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/expoxyheader_larger.jpg);
     }
 
     .title h1{
         width: 100%;
-        padding-right: 100px;
+        padding-right: 0;
+        text-align: center;
     }
 
     .title p{
         width: 100%;
-        padding-right: 100px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .t-btn{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* gap: 40px; */
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
 
     .title button{
@@ -1087,13 +1116,16 @@ footer li{
         object-fit: contain;
     }
 
+    .s-info{
+        margin-bottom: 125px;
+    }
+
     .s-info button{
         width: 200px;
         height: 45px;
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.5px;
-        margin-bottom: 100px;
     }
 
     /* main body/why us */
@@ -1145,13 +1177,17 @@ footer li{
 
     @media (max-width: 653px){
 
+        /* header/navegation section */
+
         .navbar .nav-links{
             max-width: 40%;
         }
 
+        /* main body/title */
+
         .title{
             height: 450px;
-            padding: 60px 60px 0px 60px;
+            padding: 70px 40px 0px 40px;
         }
 
         .title h1{
@@ -1174,7 +1210,6 @@ footer li{
             justify-content: center;
             align-items: center;
             padding: 0;
-            
         }
 
         .title button{
@@ -1260,14 +1295,18 @@ footer li{
 
     @media (max-width: 513px){
 
+        /* header/navegation section */
+
         .navbar .nav-links{
             max-width: 200px;
         }
 
+         /* main body/title */
+
         .title{
             width: 100%;
-            height: 600px;
-            padding: 55px 55px 0px 55px;
+            height: 625px;
+            padding: 70px 40px 0px 40px;
             
         }
 
@@ -1303,28 +1342,31 @@ footer li{
             gap: 0;
         }
 
+        /* main body/services */
+
         .services{
             padding-top: 0;
-            margin-top: 25px;
+            margin-top: 125px;
             margin-bottom: 100px;
-            row-gap: 100px;
+            row-gap: 50px;
         }
 
         .services img{
             /* border: #000 1px solid; */
             /* object-fit: contain;
             object-position: none; */
-            margin-top: 50px;
+            margin-top: 0;
 
             
         }
 
         .s-info{
-            row-gap: 0;
+            row-gap: 50px;
+            margin-bottom: 100px;
         }
 
         .s-info h2{
-            padding: 0 0 40px 0;
+            padding: 0 0 0 0;
             
         }
 
@@ -1338,6 +1380,7 @@ footer li{
            
         }
 
+        /* main body/why us */
 
         .why img{
             height: 500px;
@@ -1347,9 +1390,13 @@ footer li{
 
     @media (max-width: 339px){
 
+        /* header/navegation section */
+
         .navbar .nav-links{
             max-width: 100%;
         }
+
+        /* main body/title */
 
         .title{
             height: 650px;
@@ -1364,18 +1411,27 @@ footer li{
             font-weight: 600;
         }
 
+        /* main body/services */
+
         .services{
+            padding-top: 75px;
             margin-top: 25px;
             margin-bottom: 100px;
             row-gap: 50px;
         }
+
+        .s-info{
+            margin-bottom: 100px;
+        }
+
+        /* main body/why us */
 
         .why img{
             height: 400px;
         }
 
 
-            /* footer */
+        /* footer */
 
         .footer-container{
             grid-template-columns: 1fr;
