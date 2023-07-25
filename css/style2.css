@@ -39,9 +39,11 @@ header{
     padding: 0 100px 0 75px;
 }
 
+
 .logo img{
     width: 100px;
 }
+
 
 .smedia-mobile{
     display: flex;
@@ -156,30 +158,34 @@ header{
     width: 100%;
     /* margin-top: 70px; */
     background-color: #F3D237;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/epoxyheader2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/expoxy\ header3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 550px;
+    height: 600px;
     /* padding: clamp(0.9375rem, -2.66395rem + 15.164vw, 12.5rem); */
-    padding-left: 225px;
-    padding-top: 75px;
+    /* padding-left: 260px; */
+    padding-left: clamp(1rem, -0.58985rem + 10.599vw, 16.25rem);
+    padding-top: 120px;
 }
 
 .title h1{
     /* border: 1px solid black; */
     width: 700px;
     color: #fff;
-    font-size: clamp(10px, 2vw + 1rem, 37px);
-    letter-spacing: 1.5px;
+    /* font-size: clamp(10px, 2vw + 1rem, 37px); */
+    font-size: clamp(1.5625rem, 1.43215rem + 0.869vw, 2.8125rem);
+    letter-spacing: 1px;
 }
 
 .title p{
     /* border: 1px solid black; */
-    margin: 50px 0 0 0;
+    margin: 40px 0 0 0;
     width: 600px;
     color: #fff;
-    font-size: clamp(1.25rem, 1.15263rem + 0.41vw, 1.5625rem);
+    /* font-size: clamp(1.25rem, 1.15263rem + 0.41vw, 1.5625rem); */
+    /* font-size: clamp(1.25rem, 1.21745rem + 0.217vw, 1.5625rem); */
+    font-size: clamp(1.25rem, 1.21745rem + 0.217vw, 1.5625rem);
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -192,7 +198,7 @@ header{
 }
 
 .title button{
-    margin: 65px 0;
+    margin: 85px 0;
     width: 165px;
     height: 53px;
     font-size: 16px;
@@ -233,17 +239,16 @@ header{
 
 
 .services{
-    /* margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem); */
-    /* margin-top: clamp(1rem, -0.63519rem + 6.885vw, 6.25rem); */
-    margin: clamp(0.9375rem, -3.6966rem + 19.512vw, 10.9375rem);
+    /* margin: clamp(0.9375rem, -3.6966rem + 19.512vw, 10.9375rem); */
+    margin: clamp(1rem, -0.47203rem + 6.198vw, 9.375rem);
     /* border: solid 1px #000; */
     display: grid;
     justify-content: center;
     align-items: center;
-    row-gap: 0;
-    column-gap: 0;
-    grid-template-columns: 1fr 50%;
-    grid-template-rows: 1fr;
+    row-gap: 150px;
+    column-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .a{
@@ -267,12 +272,11 @@ header{
 .services img{
     margin-top: 0;
     margin: auto;
-    padding: 25px 25px 25px 25px;
+    /* padding: 25px 25px 25px 25px; */
     border-radius: 10px;
     /* border: solid 1px #000; */
-    /* padding: clamp(0.625rem, -0.73778rem + 5.738vw, 5rem); */
-    /* width: clamp(12.5rem, 2.7663rem + 40.984vw, 43.75rem); */
-    width: clamp(12.5rem, 1.79303rem + 45.082vw, 46.875rem);
+    /* width: clamp(12.5rem, 1.79303rem + 45.082vw, 46.875rem); */
+    width: clamp(9.375rem, 5.1396rem + 28.236vw, 50rem);
     /* transition: .1s ease; */
 }
 
@@ -285,7 +289,7 @@ header{
     margin: clamp(1rem, 0.14334rem + 3.607vw, 3.75rem);
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 20px;
 }
 
 .s-info a{
@@ -295,7 +299,7 @@ header{
 .s-info button{
     /* border: solid 1px #000; */
     margin: auto;
-    margin-top: 10px;
+    margin-top: 35px;
     width: 185px;
     height: 50px;
     font-size: 16px;
@@ -319,7 +323,7 @@ header{
 
 .s-info h2{
     /* border: solid 1px #000; */
-    padding: 0 0 0 0;
+    padding: 0 0 35px 0;
     text-align: center;
     letter-spacing: 0.5px;
     font-size: clamp(1.375rem, 1.27763rem + 0.41vw, 1.6875rem);
@@ -331,12 +335,15 @@ header{
 
 .s-info p{
     /* border: solid 1px #000; */
-    padding: 0 125px 0 125px;
+    padding: 0 50px 0 50px;
     text-align: left;
-    letter-spacing: 1px;
-    font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem);
+    letter-spacing: 0.5px;
+    /* font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem); */
+    font-size: clamp(1rem, 0.9739rem + 0.174vw, 1.25rem);
     /* font-size: 25px; */
 }
+
+/* ------------------ */
 
 .list li{
     padding: 30px 0 0 0;
@@ -350,6 +357,8 @@ header{
     padding-bottom: 1px;
     background-color: #f9f9f9;
 }
+
+/* ----------------- */
 
 .hidden{
     opacity: 0;
@@ -379,15 +388,14 @@ header{
     /* border: solid 1px #000; */
     padding-top: 125px;
     padding-bottom: 125px;
-    margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem);
+    /* margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem); */
+    margin: clamp(1rem, -0.47203rem + 6.198vw, 9.375rem);
     margin-bottom: 0;
     display: grid;
-    column-gap: 75px;
-    row-gap: 25px;
+    column-gap: 0;
+    row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-
 }
 
 .e{
@@ -401,22 +409,26 @@ header{
     margin: auto;
     /* border: solid 1px #000; */
     grid-column: 3/5;
-    grid-row: 1/2;
+    grid-row: 1/3;
 }
 
 .g{
     /* border: solid 1px #000; */
     grid-column: 3/5;
-    grid-row: 2/7;
+    grid-row: 3/7;
 }
 
 .why img{
     /* border: solid 1px #000; */
+    border-radius: 10px;
+    margin-left: 0;
     /* padding: 0 50px 0 50px; */
     width: clamp(18.75rem, 14.85666rem + 16.393vw, 31.25rem);
+    /* width: clamp(12.5rem, 10.5452rem + 13.032vw, 31.25rem); */
 }
 
 .reasons{
+    margin-right: 250px;
     /* border: solid 1px #000; */
     display: flex;
     flex-direction: column;
@@ -424,6 +436,7 @@ header{
 }
 
 .why h2{
+    margin-right: 250px;
     /* border: solid 1px #000; */
     padding: 0 0 0 0;
     text-align: center;
@@ -433,8 +446,9 @@ header{
 .reasons p{
     padding: 0 0 40px 0;
     text-align: left;
+    letter-spacing: 0.5px;
     /* font-size: clamp(0.8125rem, 0.6567rem + 0.656vw, 1.3125rem); */
-    font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem);
+    font-size: clamp(1rem, 0.9739rem + 0.174vw, 1.25rem);
 }
 
 
@@ -442,9 +456,8 @@ header{
 
 .smedia{
     position: fixed;
-    top: 50%;
-    bottom: 50%;
-
+    top: 43%;
+    /* bottom: 50%; */
 }
 
 .smedia a{
@@ -472,18 +485,24 @@ header{
 /* footer*/
 
 footer{
+    padding-top: 0;
     background-color: #404040;
     border: solid 1px #000;
 }
 
 .footer-container{
     /* border: solid 1px #fff; */
-    margin: clamp(1rem, -0.24593rem + 5.246vw, 5rem);
+    /* margin: clamp(1rem, -0.24593rem + 5.246vw, 5rem); */
+    /* margin: clamp(1rem, -0.47203rem + 6.198vw, 9.375rem); */
+    margin: clamp(1.5625rem, 1.3996rem + 1.086vw, 3.125rem);
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr;
+}
 
+.footer-container a{
+    margin: auto;
 }
 
 .f-logo{
@@ -507,14 +526,16 @@ footer{
 .f-contact p, a{
     color: #fff;
     font-weight: 600;
-    font-size: clamp(0.625rem, 0.50815rem + 0.492vw, 1rem);
+    /* font-size: clamp(0.625rem, 0.50815rem + 0.492vw, 1rem); */
+    font-size: clamp(0.75rem, 0.7305rem + 0.13vw, 0.9375rem);
 }
 
 .cont{
     position: relative;
     bottom: 10px;
     color:#F3D237;
-    font-size: clamp(1.25rem, 0.86074rem + 1.639vw, 2.5rem);
+    font-size: clamp(1.25rem, 0.86074rem + 1.639vw, 2rem);
+    /* font-size: clamp(0.8125rem, 0.793rem + 0.13vw, 1rem); */
 }
 
 .f-services{
@@ -566,9 +587,32 @@ footer li{
 
 @media (max-width:2418px){
 
-    .s-info p{
-        padding: 0 10px 0 65px;
-    }
+    /* main body/title */
+
+   .title{
+       height: 600px;
+       padding-top: 104px;
+   }
+
+   .services{
+       column-gap: 100px;
+       padding-bottom: 50px;
+   }
+
+   /* main body/why us */
+
+
+   .why img{
+       margin-left: 0;
+   }
+
+   .why h2{
+       margin-right: 175px;
+   }
+
+   .reasons{
+       margin-right: 175px;
+   }
 
 }
 
@@ -580,7 +624,8 @@ footer li{
     /* main body/title */
     
     .title{
-        padding-left: 175px;
+        height: 550px;
+        padding-top: 95px;
     }
 
     /* main body/services */
@@ -591,15 +636,16 @@ footer li{
     
 
     .services{
-        row-gap: 50px;
+        row-gap: 125px;
+        column-gap: 75px;
     }
 
     .services img{
-        padding: 50px 50px 50px 100px;
+        /* padding: 50px 50px 50px 100px; */
     }
 
     .s-info p{
-        padding: 0 15px 0 15px;
+        padding: 0 0 0 0;
     }
 
     /* social media */
@@ -638,22 +684,37 @@ footer li{
     /* main body/title */
     
     .title{
-        padding-left: 115px;
+        /* padding-left: 115px; */
+        padding-top: 95px;
     }
 
     /* main body/services */
+
+    .services{
+        padding-top: 50px;
+        column-gap: 50px;
+        padding-bottom: 75px;
+    }
 
     .intro-concrete p{
         padding: 0 50px 0 50px;
     }
 
     .services img{
-        padding: 75px 95px 75px 80px;
+        /* padding: 75px 95px 75px 80px; */
+    }
+
+    .s-info{
+        row-gap: 25px;
+    }
+
+    .s-info h2{
+        padding: 0 0 20px 0;
     }
 
 
     .s-info p{
-        padding: 0 0px 0 40px;;
+        padding: 0 20px 0 20px;
     }
 
     /* social media */
@@ -690,7 +751,25 @@ footer li{
         width: 157px;
     }
 
+    /* main body/title */
+
+    .title{
+        padding-top: 105px;
+    }
+
     /* main body/services */
+
+    .services{
+        column-gap: 25px;
+    }
+
+    .services img{
+        /* height: 600px; */
+        /* padding: 75px 85px 75px 80px; */
+        object-fit:cover;
+        object-position: left;
+        /* height: 325px; */
+    }
 
     .s-info button{
         width: 175px;
@@ -699,16 +778,16 @@ footer li{
         font-weight: 600;
     }
 
-    .services img{
+    /* .services img{
         height: 600px;
         padding: 75px 85px 75px 80px;
         object-fit:cover;
         object-position: left;
-    }
+    } */
 
 
     .s-info p{
-        padding: 0 15px 0 50px;
+       /* padding: 0 15px 0 50px; */
     }
 
     /* social media */
@@ -750,10 +829,14 @@ footer li{
         width: 136px;
     }
 
+    /* main body/title */
+
     .title{
         height: 500px;
-        padding: 80px 100px;
+        padding-top: 90px;
+        padding-left: 83px;
         background-position: center;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/expoxy\ header3.jpg);
     }
 
     .title h1{
@@ -762,7 +845,7 @@ footer li{
     
     .title p{
         margin: 40px 0 0 0;
-        width: 550px;
+        width: 510px;
     }
 
     
@@ -782,7 +865,8 @@ footer li{
 
 
     .services{
-        row-gap: 0px;
+        padding-top: 50px;
+        row-gap: 75px;
     }
 
     .s-info button{
@@ -792,11 +876,16 @@ footer li{
         font-weight: 600;
     }
 
+    .s-info p{
+        padding: 0 5px 0 5px;
+        text-align: center;
+    }
+
     .services img{
-        height: 450px;
+        /* height: 450px;
         padding: 30px 75px 30px 75px;
         object-fit:cover;
-        object-position: left;
+        object-position: left; */
     }
 
     
@@ -862,18 +951,21 @@ footer li{
     /* footer */
 
     .footer-container{
-        grid-template-columns: 8% 20% 20% 20% 20%;
+        grid-template-columns: 30% 20% 20% 20%;
         grid-template-rows: 1fr;
-        row-gap: 25px;
+        row-gap: 35px;
     }
     
     .f-logo{
-        grid-column: 1/3;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/2;
         grid-row: 1/2;
     }
     
     .f-contact{
-        grid-column: 1/3;
+        grid-column: 1/2;
         grid-row: 2/3;
     
         display: grid;
@@ -882,17 +974,20 @@ footer li{
     }
     
     .f-services{
-        grid-column: 3/4;
+        padding-top: 25px;
+        grid-column: 2/3;
         grid-row: 1/3;
     }
     
     .f-company{
-        grid-column: 4/5;
+        padding-top: 25px;
+        grid-column: 3/4;
         grid-row: 1/3;
     }
     
     .f-locations{
-        grid-column: 5/6;
+        padding-top: 25px;
+        grid-column: 4/5;
         grid-row: 1/3;
     }
 
@@ -925,7 +1020,7 @@ footer li{
         padding: 20px;
         top: 0;
         right: -100%;
-        max-width: 270px;
+        max-width: 300px;
         width: 100%;
         line-height: 50px;
         transition: all 0.5s ease;
@@ -1043,16 +1138,31 @@ footer li{
 
     .title{
         height: 550px;
+        padding: 115px 100px 0px 100px;
+        background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/expoxy\ header3.jpg);
     }
 
     .title h1{
         width: 100%;
-        padding-right: 100px;
+        padding-right: 0;
+        text-align: center;
     }
 
     .title p{
         width: 100%;
-        padding-right: 100px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+
+    .t-btn{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* gap: 40px; */
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
 
     .title button{
@@ -1067,8 +1177,9 @@ footer li{
 
     .services{
         margin: clamp(0.9375rem, -1.69068rem + 11.066vw, 9.375rem);
-        margin-top: 125px;
+        /* margin-top: 125px; */
         /* border: solid 1px #000; */
+        margin-bottom: 0;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -1100,10 +1211,20 @@ footer li{
 
 
     .services img{
-        width: 100%;
+        width: 85%;
         height: 100%;
         padding: 25px;
         object-fit: contain;
+    }
+
+    .s-info{
+        margin-bottom: 100px;
+        row-gap: 55px;
+    }
+
+    .s-info p{
+        padding: 0 35px 0 35px;
+        line-height: 1.5;
     }
 
     .s-info button{
@@ -1112,7 +1233,6 @@ footer li{
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.5px;
-        margin-bottom: 100px;
     }
 
     /* main body/why us */
@@ -1164,86 +1284,98 @@ footer li{
 
     @media (max-width: 653px){
 
-        .navbar .nav-links{
-            max-width: 40%;
-        }
+        /* header/navegation section */
 
-        .title{
-            height: 450px;
-            padding: 60px 60px 0px 60px;
-        }
+    .navbar .nav-links{
+        max-width: 40%;
+    }
 
-        .title h1{
-            text-align: center;
-            width: 100%;
-            padding-right: 0;
-        }
+     /* main body/title */
+
+    .title{
+        height: 450px;
+        padding: 70px 40px 0px 40px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(../images/expoxy\ header3.jpg);
+    }
+
+    .title h1{
+        text-align: center;
+        width: 100%;
+        padding-right: 0;
+    }
     
-        .title p{
-            text-align: center;
-            width: 100%;
-            padding-right: 0;
-        }
+    .title p{
+        text-align: center;
+        width: 100%;
+        padding-right: 0;
+    }
 
-        .t-btn{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            /* gap: 40px; */
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            
-        }
+    .t-btn{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* gap: 40px; */
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 
-        .title button{
-            margin: 40px 0;
-            width: 130px;
-            height: 50px;
-            font-size: 14px;
-            font-weight: 600;
-        }
+    .title button{
+        margin: 40px 0;
+        width: 130px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+    }
 
-        /* main body/services */
+    /* main body/services */
 
         
 
-        .services img{
-            /* border: #000 1px solid; */
-            margin-top: 0;
-            padding: 0;
-            width: 100%;
-            object-fit:contain;
-            object-position: none;
-            
-        }
+    .services img{
+        /* border: #000 1px solid; */
+        margin-top: 0;
+        padding: 0;
+        /* width: 100%;
+        object-fit:contain;
+        object-position: none; */  
+    }
 
-        /* main body/why us */
+    /* main body/why us */
 
-        .why{
-            padding-top: 75px;
-        }
+    .why{
+        padding-top: 150px;
+    }
 
-        .why img{
-            height: 600px;
-        }
+    .why img{
+        height: 600px;
+        padding: 15px;
+    }
+    .why h2{
+        padding: 25px;
+    }
+    
+    .reasons{
+        padding: 15px;
+    }
         
 
-        /* footer */
+    /* footer */
 
     .footer-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        row-gap: 25px;
+        row-gap: 40px;
+        column-gap: 0;
     }
     
     .f-logo{
-        grid-column: 1/3;
+        grid-column: 1/2;
         grid-row: 1/2;
     }
     
     .f-contact{
-        grid-column: 1/3;
+        grid-column: 1/2;
         grid-row: 2/3;
     
         display: grid;
@@ -1252,19 +1384,21 @@ footer li{
     }
     
     .f-services{
-        grid-column: 3/5;
-        grid-row: 1/3;
+        grid-column: 1/2;
+        grid-row: 3/5;
     }
     
     .f-company{
-        grid-column: 1/3;
-        grid-row: 3/5;
+        padding-top: 25px;
+        grid-column: 2/3;
+        grid-row: 1/3;
     }
     
     .f-locations{
-        grid-column: 3/5;
+        grid-column: 2/3;
         grid-row: 3/5;
     }
+
 
     }
 
@@ -1279,14 +1413,18 @@ footer li{
 
     @media (max-width: 513px){
 
+        /* header/navegation section */
+
         .navbar .nav-links{
-            max-width: 200px;
+            max-width: 250px;
         }
+
+         /* main body/title */
 
         .title{
             width: 100%;
-            height: 600px;
-            padding: 55px 55px 0px 55px;
+            height: 625px;
+            padding: 80px 40px 0px 40px;
             
         }
 
@@ -1322,46 +1460,36 @@ footer li{
             gap: 0;
         }
 
-        .intro-concrete h1{
-            padding: 50px 0 50px 0;
-        }
-
-        .intro-concrete p{
-            padding: 0 25px 40px 25px;
-        }
-    
+        /* main body/services */
 
         .services{
-            margin-top: 25px;
-            margin-bottom: 100px;
-            row-gap: 25px;
+            padding-top: 0;
+            margin-top: 125px;
+            margin-bottom: 0x;
+            row-gap: 50px;
         }
 
         .services img{
             /* border: #000 1px solid; */
-            object-fit: contain;
-            object-position: none;
-            margin-top: 0px;
+            /* object-fit: contain;
+            object-position: none; */
+            margin-top: 0;
 
             
         }
 
         .s-info{
-            row-gap: 0;
+            row-gap: 50px;
+            margin-bottom: 100px;
         }
 
         .s-info h2{
-            padding: 50px 0 40px 0;
+            padding: 0 0 0 0;
             
         }
 
         .s-info p{
-            padding: 40px 0 40px 0;
-            
-        }
-
-        .list li{
-            padding: 30px 0 30px 0;
+            padding: 0 0 0 0;
         }
 
         .s-info button{
@@ -1374,6 +1502,12 @@ footer li{
            
         }
 
+        /* main body/why us */
+
+        .why{
+            row-gap: 30px;
+        }
+
 
         .why img{
             height: 500px;
@@ -1383,13 +1517,17 @@ footer li{
 
     @media (max-width: 339px){
 
+        /* header/navegation section */
+
         .navbar .nav-links{
             max-width: 100%;
         }
 
+        /* main body/title */
+
         .title{
             height: 650px;
-            padding: 40px 40px 0px 40px;
+            padding: 70px 40px 0px 40px;
         }
 
         .title button{
@@ -1400,23 +1538,33 @@ footer li{
             font-weight: 600;
         }
 
+        /* main body/services */
+
         .services{
+            padding-top: 75px;
             margin-top: 25px;
-            margin-bottom: 100px;
+            margin-bottom: 0;
             row-gap: 50px;
         }
+
+        .s-info{
+            margin-bottom: 100px;
+        }
+
+        /* main body/why us */
 
         .why img{
             height: 400px;
         }
 
 
-            /* footer */
+        /* footer */
 
         .footer-container{
+            padding: 50px 0 50px 0;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            row-gap: 25px;
+            row-gap: 30px;
         }
         
         .f-logo{

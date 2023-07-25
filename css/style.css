@@ -219,9 +219,7 @@ header{
 
 /* main body/services */
 
-/* .containerservices{
-    
-} */
+
 
 
 .services{
@@ -313,7 +311,6 @@ header{
     letter-spacing: 0.5px;
     /* font-size: clamp(1.125rem, 1.08605rem + 0.164vw, 1.25rem); */
     font-size: clamp(1rem, 0.9739rem + 0.174vw, 1.25rem);
-    
     /* font-size: 25px; */
 }
 
@@ -353,8 +350,6 @@ header{
     row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
-
 }
 
 .e{
@@ -417,7 +412,6 @@ header{
     position: fixed;
     top: 43%;
     /* bottom: 50%; */
-
 }
 
 .smedia a{
@@ -459,7 +453,6 @@ footer{
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr;
-
 }
 
 .footer-container a{
